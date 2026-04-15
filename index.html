@@ -84,7 +84,7 @@
       background_color: '#f0f4f8',
       surface_color: '#ffffff',
       text_color: '#1a2332',
-      primary_color: '#2563eb',
+      primary_color: '#2563eb', /* Cenderung Biru */
       secondary_color: '#64748b'
     };
 
@@ -256,54 +256,9 @@
       }
     });
 
-    // Element SDK
-    window.elementSdk.init({
-      defaultConfig,
-      onConfigChange: async (config) => {
-        const c = { ...defaultConfig, ...config };
-        applyColors(c);
-        document.getElementById('formTitle').textContent = c.form_title;
-        document.getElementById('formSubtitle').textContent = c.subtitle_text;
-        document.getElementById('btnText').textContent = c.submit_button_text;
-
-        if (c.font_family) {
-          document.getElementById('app').style.fontFamily = `${c.font_family}, 'Plus Jakarta Sans', sans-serif`;
-        }
-        if (c.font_size) {
-          const b = c.font_size;
-          document.getElementById('formTitle').style.fontSize = `${b * 1.875}px`;
-          document.getElementById('formSubtitle').style.fontSize = `${b}px`;
-        }
-
-        // Recolor submit button
-        const submitBtn = document.getElementById('submitBtn');
-        submitBtn.style.background = c.primary_color || defaultConfig.primary_color;
-        submitBtn.style.color = c.surface_color || defaultConfig.surface_color;
-
-        renderJenjang();
-      },
-      mapToCapabilities: (config) => ({
-        recolorables: [
-          { get: () => config.background_color || defaultConfig.background_color, set: v => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
-          { get: () => config.surface_color || defaultConfig.surface_color, set: v => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
-          { get: () => config.text_color || defaultConfig.text_color, set: v => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
-          { get: () => config.primary_color || defaultConfig.primary_color, set: v => { config.primary_color = v; window.elementSdk.setConfig({ primary_color: v }); } },
-          { get: () => config.secondary_color || defaultConfig.secondary_color, set: v => { config.secondary_color = v; window.elementSdk.setConfig({ secondary_color: v }); } }
-        ],
-        borderables: [],
-        fontEditable: { get: () => config.font_family || defaultConfig.font_family || 'Plus Jakarta Sans', set: v => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
-        fontSizeable: { get: () => config.font_size || 16, set: v => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } }
-      }),
-      mapToEditPanelValues: (config) => new Map([
-        ['form_title', config.form_title || defaultConfig.form_title],
-        ['subtitle_text', config.subtitle_text || defaultConfig.subtitle_text],
-        ['submit_button_text', config.submit_button_text || defaultConfig.submit_button_text]
-      ])
-    });
-
     applyColors(defaultConfig);
     renderJenjang();
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9eca8c59c091fcf2',t:'MTc3NjI1MTg5My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
