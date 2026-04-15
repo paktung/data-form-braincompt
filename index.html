@@ -82,12 +82,10 @@
   <style>body { box-sizing: border-box; }</style>
  </head>
  <body class="h-full">
-  <div id="app" class="content-wrapper h-full w-full" style="background: var(--bg);">
-   <!-- Header/Hero Section -->
+  <div id="app" class="content-wrapper h-full w-full" style="background: var(--bg);"><!-- Header/Hero Section -->
    <div class="main-content">
     <div class="header-section">
-     <div class="header-content">
-      <img src="https://res.cloudinary.com/do3jvxebp/image/upload/v1775877552/logo_braincompt_mxlwxs.png" alt="Braincompt Logo" class="header-logo" loading="lazy">
+     <div class="header-content"><img src="https://res.cloudinary.com/do3jvxebp/image/upload/v1775877552/logo_braincompt_mxlwxs.png" alt="Braincompt Logo" class="header-logo" loading="lazy">
       <div class="header-text">
        <h1>Braincompt Digital Media</h1>
        <p>Platform Pelatihan Pendidikan Digital</p>
@@ -95,10 +93,8 @@
      </div>
     </div><!-- Main Content -->
     <div class="max-w-4xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
-     <div class="space-y-8">
-      <!-- Program Info -->
-      <div>
-       <!-- Program Title -->
+     <div class="space-y-8"><!-- Program Info -->
+      <div><!-- Program Title -->
        <div class="mb-8">
         <h2 id="programTitle" class="text-3xl sm:text-4xl font-800 mb-2" style="color: var(--primary);"></h2>
         <p id="programSubtitle" class="text-lg font-600" style="color: var(--text); opacity: 0.7;"></p>
@@ -118,64 +114,58 @@
        <div class="mb-8 p-6 rounded-2xl" style="background: var(--surface); border: 1px solid rgba(0,0,0,0.06);">
         <h3 class="text-xl font-700 mb-4" style="color: var(--text);">🎯 Pelaksanaan</h3>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-         <div class="flex items-center gap-2" style="color: var(--text);"><i data-lucide="video" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">Zoom Meeting</span>
+         <div class="flex items-center gap-2" style="color: var(--text);">
+          <i data-lucide="video" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">Zoom Meeting</span>
          </div>
-         <div class="flex items-center gap-2" style="color: var(--text);"><i data-lucide="play-circle" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">Live YouTube</span>
+         <div class="flex items-center gap-2" style="color: var(--text);">
+          <i data-lucide="play-circle" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">Live YouTube</span>
          </div>
-         <div class="flex items-center gap-2" style="color: var(--text);"><i data-lucide="book-open" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">LMS Terpadu</span>
+         <div class="flex items-center gap-2" style="color: var(--text);">
+          <i data-lucide="book-open" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">LMS Terpadu</span>
          </div>
-         <div class="flex items-center gap-2" style="color: var(--text);"><i data-lucide="clock" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">Fleksibel</span>
+         <div class="flex items-center gap-2" style="color: var(--text);">
+          <i data-lucide="clock" style="width:20px;height:20px;color:var(--primary);"></i> <span class="text-sm font-600">Fleksibel</span>
          </div>
         </div>
        </div><!-- Website Button --> <a href="https://braincompt.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-700 transition-all hover:shadow-lg" style="background: var(--primary); color: var(--surface);"> <i data-lucide="globe" style="width:20px;height:20px;"></i> Kunjungi Website Resmi </a>
       </div><!-- Registration Form Card -->
       <div class="rounded-2xl p-6 shadow-lg" style="background: var(--surface); border: 1px solid rgba(0,0,0,0.06);">
        <h3 class="text-lg font-700 mb-5" style="color: var(--text);">📝 Daftar Sekarang</h3>
-       <form id="regForm" novalidate>
-        <!-- Nama -->
-        <div class="field-focus mb-4">
-         <label for="nama" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Nama Lengkap</label> <input type="text" id="nama" name="nama" required placeholder="Nama Anda" class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);">
+       <form id="regForm" novalidate><!-- Nama -->
+        <div class="field-focus mb-4"><label for="nama" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Nama Lengkap</label> <input type="text" id="nama" name="nama" required placeholder="Nama Anda" class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);">
          <p class="err text-xs mt-1 hidden" style="color:#e53e3e;">Nama wajib diisi</p>
         </div><!-- Unit -->
-        <div class="field-focus mb-4">
-         <label for="unit" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Unit/Sekolah</label> <input type="text" id="unit" name="unit" required placeholder="Nama institusi" class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);">
+        <div class="field-focus mb-4"><label for="unit" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Unit/Sekolah</label> <input type="text" id="unit" name="unit" required placeholder="Nama institusi" class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);">
          <p class="err text-xs mt-1 hidden" style="color:#e53e3e;">Unit wajib diisi</p>
         </div><!-- Nomor WA -->
-        <div class="field-focus mb-4">
-         <label for="nomorWA" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Nomor WhatsApp</label>
-         <div class="flex items-center gap-2">
-          <span class="flex-shrink-0 px-3 py-2.5 rounded-xl text-sm font-600 border" style="background: var(--bg); color: var(--text); opacity:0.6; border-color: rgba(0,0,0,0.12);">+62</span> <input type="tel" id="nomorWA" name="nomorWA" required placeholder="8xxxxxxxxxx" class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);">
+        <div class="field-focus mb-4"><label for="nomorWA" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Nomor WhatsApp</label>
+         <div class="flex items-center gap-2"><span class="flex-shrink-0 px-3 py-2.5 rounded-xl text-sm font-600 border" style="background: var(--bg); color: var(--text); opacity:0.6; border-color: rgba(0,0,0,0.12);">+62</span> <input type="tel" id="nomorWA" name="nomorWA" required placeholder="8xxxxxxxxxx" class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);">
          </div>
          <p class="err text-xs mt-1 hidden" style="color:#e53e3e;">Nomor WhatsApp wajib diisi</p>
         </div><!-- Jenjang -->
-        <div class="field-focus mb-4">
-         <label for="jenjang" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Jenjang</label> <select id="jenjang" name="jenjang" required class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);"> <option value="">-- Pilih Jenjang --</option> <option value="PAUD/TK">PAUD/TK</option> <option value="SD">SD</option> <option value="SLTP">SLTP</option> <option value="SLTA">SLTA</option> <option value="SARJANA">SARJANA</option> <option value="S2">S2</option> </select>
+        <div class="field-focus mb-4"><label for="jenjang" class="block text-sm font-600 mb-1.5 transition-colors" style="color: var(--text);">Jenjang</label> <select id="jenjang" name="jenjang" required class="input-border w-full px-4 py-2.5 rounded-xl text-sm outline-none transition-all border" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12);"> <option value="">-- Pilih Jenjang --</option> <option value="PAUD/TK">PAUD/TK</option> <option value="SD">SD</option> <option value="SLTP">SLTP</option> <option value="SLTA">SLTA</option> <option value="SARJANA">SARJANA</option> <option value="S2">S2</option> </select>
          <p class="err text-xs mt-1 hidden" style="color:#e53e3e;">Pilih jenjang</p>
         </div><!-- Bukti Transfer -->
-        <div class="field-focus mb-5">
-         <label for="bukti" class="block text-sm font-600 mb-2 transition-colors" style="color: var(--text);">Bukti Transfer</label>
-         <div class="relative">
-          <input type="file" id="bukti" name="bukti" accept="image/*,.pdf" class="hidden" onchange="handleFileSelect(event)"> <label for="bukti" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-600 border-2 cursor-pointer transition-all" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12); border-style: dashed;"> <i data-lucide="upload" style="width:18px;height:18px;"></i> <span id="fileLabel">Pilih file</span> </label>
+        <div class="field-focus mb-5"><label for="bukti" class="block text-sm font-600 mb-2 transition-colors" style="color: var(--text);">Bukti Transfer</label>
+         <div class="relative"><input type="file" id="bukti" name="bukti" accept="image/*,.pdf" class="hidden" onchange="handleFileSelect(event)"> <label for="bukti" class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-600 border-2 cursor-pointer transition-all" style="background: var(--bg); color: var(--text); border-color: rgba(0,0,0,0.12); border-style: dashed;"> <i data-lucide="upload" style="width:18px;height:18px;"></i> <span id="fileLabel">Pilih file</span> </label>
          </div>
          <p id="fileName" class="text-xs mt-1.5 font-500" style="color: var(--primary);"></p>
          <p class="err text-xs mt-1 hidden" style="color:#e53e3e;">Bukti wajib diisi</p>
         </div><!-- Submit --> <button type="submit" id="submitBtn" class="w-full py-2.5 rounded-xl font-700 text-sm tracking-wide transition-all hover:shadow-lg active:scale-[0.98]" style="background: var(--primary); color: var(--surface);"> <span id="btnText">Kirim Pendaftaran</span> <span id="btnLoading" class="hidden inline-flex items-center gap-2">
-          <svg class="animate-spin h-4 w-4" viewbox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+          <svg class="animate-spin h-4 w-4" viewbox="0 0 24 24">
+           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
           </svg> Mengirim... </span> </button>
        </form>
       </div>
      </div><!-- Payment Info Section -->
      <div class="mt-12 max-w-6xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-       <!-- Payment Details -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8"><!-- Payment Details -->
        <div class="p-6 rounded-2xl" style="background: var(--surface); border: 1px solid rgba(0,0,0,0.06);">
         <h3 class="text-xl font-700 mb-6 flex items-center gap-2" style="color: var(--primary);"><i data-lucide="credit-card" style="width:24px;height:24px;"></i> Informasi Pembayaran</h3>
         <div class="space-y-6">
-         <div class="flex items-center justify-between pb-4 border-b" style="border-color: rgba(0,0,0,0.1);">
-          <span class="text-2xl font-800" style="color: var(--primary);">Rp 149.000</span> <span class="text-sm font-600 px-3 py-1 rounded-full" style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary);">Biaya Pelatihan</span>
+         <div class="flex items-center justify-between pb-4 border-b" style="border-color: rgba(0,0,0,0.1);"><span class="text-2xl font-800" style="color: var(--primary);">Rp 149.000</span> <span class="text-sm font-600 px-3 py-1 rounded-full" style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary);">Biaya Pelatihan</span>
          </div>
-         <div class="flex gap-4">
-          <img src="https://res.cloudinary.com/do3jvxebp/image/upload/v1776253897/bca-bank-central-asia_r0mqjd.png" alt="BCA Bank" class="h-12 w-auto" loading="lazy">
+         <div class="flex gap-4"><img src="https://res.cloudinary.com/do3jvxebp/image/upload/v1776253897/bca-bank-central-asia_r0mqjd.png" alt="BCA Bank" class="h-12 w-auto" loading="lazy">
           <div>
            <p class="text-sm font-600" style="color: var(--text); opacity: 0.7;">Bank BCA</p>
            <p class="text-lg font-700" style="color: var(--text);">3820217674</p>
@@ -186,8 +176,7 @@
        </div><!-- Support Section -->
        <div class="p-6 rounded-2xl" style="background: var(--surface); border: 1px solid rgba(0,0,0,0.06);">
         <h3 class="text-xl font-700 mb-6 flex items-center gap-2" style="color: var(--primary);"><i data-lucide="headset" style="width:24px;height:24px;"></i> Butuh Bantuan?</h3><a href="https://wa.me/6281225566441?text=Halo%20Untung%20Supriyono%2C%20saya%20ingin%20bertanya%20tentang%20pelatihan%20AI%20untuk%20pendidikan" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl transition-all hover:shadow-lg" style="background: #25d366; color: white;">
-         <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full" style="background: rgba(255,255,255,0.2);">
-          <i data-lucide="message-circle" style="width:24px;height:24px;"></i>
+         <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full" style="background: rgba(255,255,255,0.2);"><i data-lucide="message-circle" style="width:24px;height:24px;"></i>
          </div>
          <div>
           <p class="font-700">Hubungi Untung Supriyono</p>
@@ -204,8 +193,7 @@
     </div>
    </footer><!-- Toast -->
    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden z-50">
-    <div class="toast-enter px-5 py-3 rounded-xl shadow-xl text-sm font-600 flex items-center gap-2" style="background: var(--text); color: var(--surface);">
-     <i data-lucide="check-circle" style="width:18px;height:18px;"></i> <span id="toastMsg"></span>
+    <div class="toast-enter px-5 py-3 rounded-xl shadow-xl text-sm font-600 flex items-center gap-2" style="background: var(--text); color: var(--surface);"><i data-lucide="check-circle" style="width:18px;height:18px;"></i> <span id="toastMsg"></span>
     </div>
    </div>
   </div>
@@ -380,6 +368,13 @@
       }
     });
 
+    // Initialize pada page load dengan default config
+    applyColors(defaultConfig);
+    document.getElementById('programTitle').textContent = defaultConfig.program_title;
+    document.getElementById('programSubtitle').textContent = defaultConfig.program_subtitle;
+    document.getElementById('programDescription').textContent = defaultConfig.program_description;
+    document.getElementById('btnText').textContent = defaultConfig.submit_button_text;
+
     window.elementSdk.init({
       defaultConfig,
       onConfigChange: async (config) => {
@@ -422,5 +417,5 @@
     applyColors(defaultConfig);
     lucide.createIcons();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ecb965a45999855',t:'MTc3NjI2Mjc4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ecb9e04a4c19855',t:'MTc3NjI2MzEwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
